@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Preeti 💖</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ffd1e8,#fff0f7);
+overflow-x:hidden;
+color:#333;
+text-align:center;
+}
+
+.page{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.hidden{
+display:none;
+}
+
+h1{
+font-size:3rem;
+color:#ff1493;
+margin-bottom:20px;
+}
+
+h2{
+color:#ff1493;
+margin-bottom:15px;
+}
+
+.card{
+background:white;
+max-width:900px;
+padding:30px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+button{
+background:#ff1493;
+color:white;
+border:none;
+padding:14px 28px;
+border-radius:40px;
+font-size:18px;
+cursor:pointer;
+margin:10px;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.balloon{
+position:fixed;
+font-size:40px;
+animation:rise linear infinite;
+opacity:.8;
+z-index:-1;
+}
+
+@keyframes rise{
+from{
+transform:translateY(110vh);
+}
+to{
+transform:translateY(-120px);
+}
+}
+
+.heart{
+position:fixed;
+font-size:25px;
+animation:rise linear infinite;
+pointer-events:none;
+}
+
+.confetti{
+position:fixed;
+top:-50px;
+font-size:25px;
+animation:fall linear forwards;
+pointer-events:none;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh) rotate(720deg);
+}
+}
+
+.letter{
+text-align:left;
+line-height:2;
+font-size:18px;
+}
+
+table{
+background:white;
+padding:15px;
+border-radius:15px;
+border-collapse:collapse;
+margin:auto;
+}
+
+td{
+padding:12px 20px;
+border-bottom:1px solid #eee;
+}
+
+.hero{
+max-width:700px;
+font-size:22px;
+line-height:1.8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="home" class="page">
+
+<h1>🎂 HAPPY 25th BIRTHDAY PREETI 🎂</h1>
+
+<div class="hero">
+To the girl who is beautiful, iconic,
+my healer, my decision maker,
+and somehow still manages to turn
+"5 minutes" into "1 hour". 😂💖
+</div>
+
+<br>
+
+<button onclick="startQuiz()">
+✨ Start Birthday Adventure ✨
+</button>
+
+</div>
+
+<div id="quizPage" class="page hidden">
+
+<div class="card">
+
+<h2 id="question"></h2>
+
+<div id="answers"></div>
+
+<p id="feedback"></p>
+
+</div>
+
+</div>
+
+<div id="timePage" class="page hidden">
+
+<div class="card">
+
+<h2>⏰ Official Research On Preeti's Timing</h2>
+
+<table>
+
+<tr>
+<td>What Preeti Says</td>
+<td>What It Actually Means</td>
+</tr>
+
+<tr>
+<td>5 Minutes</td>
+<td>1 Hour</td>
+</tr>
+
+<tr>
+<td>Almost There</td>
+<td>Still At Home</td>
+</tr>
+
+<tr>
+<td>On The Way</td>
+<td>Getting Ready</td>
+</tr>
+
+<tr>
+<td>Just 2 Minutes</td>
+<td>Don't Ask 😂</td>
+</tr>
+
+</table>
+
+<br>
+
+<button onclick="showAwards()">
+Continue 😂
+</button>
+
+</div>
+
+</div>
+
+<div id="awardsPage" class="page hidden">
+
+<div class="card">
+
+<h2>🏆 Annual Awards Ceremony 🏆</h2>
+
+<p>🥇 Best Smile Award</p>
+<p>🥇 Most Beautiful Birthday Girl Award</p>
+<p>🥇 Professional Latecomer Award</p>
+<p>🥇 Best Friend Of The Year Award</p>
+<p>🥇 Certified Chaos Creator Award</p>
+
+<br>
+
+<button onclick="showStats()">
+Next 💖
+</button>
+
+</div>
+
+</div>
+<div id="statsPage" class="page hidden">
+
+<div class="card">
+
+<h2>📊 Friendship Statistics 📊</h2>
+
+<p>Years Of Friendship: Legendary ✨</p>
+<p>Laughs Shared: ∞</p>
+<p>Life Decisions Made By Preeti: Countless 😂</p>
+<p>Confusion Solved: Unlimited</p>
+<p>Emotional Support Given: Endless 💖</p>
+<p>Friendship Level: Soul Sisters 👭</p>
+
+<br>
+
+<button onclick="showLetter()">
+One Last Thing... 💌
+</button>
+
+</div>
+
+</div>
+
+<div id="letterPage" class="page hidden">
+
+<div class="card letter">
+
+<h2>💌 Dear Preeti,</h2>
+
+<p>
+
+Happy 25th Birthday 💖
+
+<br><br>
+
+I know this website is full of silly questions, terrible jokes, and me being dramatic, but before this birthday adventure ends, there are a few things I need you to know.
+
+<br><br>
+
+Thank you for every laugh, every random conversation, every memory, every inside joke, and every moment that became special simply because you were there.
+
+<br><br>
+
+There is something funny about us.
+
+Whenever I have two options, I get confused.
+
+Whenever I have ten options, I get even more confused.
+
+Whenever I have a hundred options, my brain completely stops working.
+
+And that's usually when I call you. 😂
+
+<br><br>
+
+Because somewhere along the way, you became my decision maker, my reality check, my unofficial life consultant, and the voice of reason when my mind is running in a hundred different directions.
+
+<br><br>
+
+You somehow always know exactly what to say.
+
+You make complicated things feel simple.
+
+You make scary situations feel manageable.
+
+And somehow you always manage to calm me down.
+
+<br><br>
+
+But that's not even the most important thing.
+
+<br><br>
+
+If I had to describe you in one word, it would be:
+
+<b>Healer.</b>
+
+<br><br>
+
+Not because you magically solve every problem.
+
+But because you have this beautiful ability to make people feel okay again.
+
+<br><br>
+
+A conversation with you can calm a storm.
+
+Your words can turn panic into peace.
+
+Your presence can make difficult days lighter.
+
+And your support can make impossible days survivable.
+
+<br><br>
+
+There is one thing I will always be grateful to you for.
+
+<br><br>
+
+You taught me self-love.
+
+<br><br>
+
+You taught me to be kinder to myself.
+
+You taught me to believe in myself.
+
+You taught me to see my worth even when I couldn't see it.
+
+<br><br>
+
+You may never fully realize how much that changed me.
+
+But it did.
+
+<br><br>
+
+When I felt alone, you stayed.
+
+When I doubted myself, you believed in me.
+
+When it felt like nobody understood me, you listened.
+
+When life felt heavy, you helped me carry it.
+
+<br><br>
+
+You healed parts of me that you never even knew were hurting.
+
+And I don't think I can ever thank you enough for that.
+
+<br><br>
+
+Some people become friends.
+
+Some become family.
+
+And a very rare few become a safe place.
+
+<br><br>
+
+Preeti,
+
+you are that safe place for me.
+
+<br><br>
+
+Thank you for every piece of advice.
+
+Thank you for every reality check.
+
+Thank you for every laugh.
+
+Thank you for every hug.
+
+Thank you for every time you stayed when I needed someone.
+
+<br><br>
+
+Thank you for being my guide.
+
+Thank you for being my healer.
+
+Thank you for being my decision maker.
+
+Thank you for being one of the greatest blessings in my life.
+
+<br><br>
+
+If I had to choose my best friend all over again,
+
+I would still choose you.
+
+Every single time.
+
+<br><br>
+
+I love you endlessly.
+
+<br><br>
+
+Forever your bestie,
+
+<br><br>
+
+<b>Rutuja 💖</b>
+
+</p>
+
+<br>
+
+<button onclick="celebrate()">
+💖 Claim Your Birthday Hug 💖
+</button>
+
+</div>
+
+</div>
+<div id="finalPage" class="page hidden">
+
+<h1>🎉 HAPPY BIRTHDAY PREETI 🎉</h1>
+
+<h2>You are loved ❤️</h2>
+<h2>You are appreciated ❤️</h2>
+<h2>You are officially stuck with Rutuja forever 😂💖</h2>
+
+<br>
+
+<h3>🤗 Virtual Hug Delivered Successfully 🤗</h3>
+
+</div>
+
+<script>
+
+for(let i=0;i<20;i++){
+
+let balloon=document.createElement("div");
+
+balloon.className="balloon";
+
+balloon.innerHTML=
+["🎈","🎈","💖","🎀"]
+[Math.floor(Math.random()*4)];
+
+balloon.style.left=
+Math.random()*100+"vw";
+
+balloon.style.animationDuration=
+(8+Math.random()*8)+"s";
+
+document.body.appendChild(balloon);
+
+}
+
+const questions=[
+
+{
+question:"Is Preeti the most iconic girl alive?",
+answers:["YES","NO"],
+correct:"YES"
+},
+
+{
+question:"Who makes all of Rutuja's life decisions?",
+answers:[
+"Google",
+"Astrology",
+"Coin Toss",
+"Preeti"
+],
+correct:"Preeti"
+},
+
+{
+question:"When Preeti says 'I'm reaching in 5 minutes', what does she actually mean?",
+answers:[
+"5 Minutes",
+"15 Minutes",
+"30 Minutes",
+"1 Hour"
+],
+correct:"1 Hour"
+},
+
+{
+question:"Who deserves the biggest slice of cake today?",
+answers:[
+"Preeti",
+"Definitely Preeti",
+"Obviously Preeti"
+],
+correct:"Preeti"
+},
+
+{
+question:"Will you stay Rutuja's best friend forever?",
+answers:[
+"YES",
+"NO"
+],
+correct:"YES"
+}
+
+];
+
+let currentQuestion=0;
+
+function startQuiz(){
+
+document.getElementById("home")
+.classList.add("hidden");
+
+document.getElementById("quizPage")
+.classList.remove("hidden");
+
+loadQuestion();
+
+}
+
+function loadQuestion(){
+
+let q=questions[currentQuestion];
+
+document.getElementById("question")
+.innerHTML=q.question;
+
+let html="";
+
+q.answers.forEach(answer=>{
+
+if(answer==="NO"){
+
+html+=`
+<button id="noBtn">
+NO
+</button>
+`;
+
+}else{
+
+html+=`
+<button onclick="checkAnswer('${answer}')">
+${answer}
+</button>
+`;
+
+}
+
+});
+
+document.getElementById("answers")
+.innerHTML=html;
+
+document.getElementById("feedback")
+.innerHTML="";
+
+let noBtn=
+document.getElementById("noBtn");
+
+if(noBtn){
+
+noBtn.addEventListener("mouseover",()=>{
+
+let x=
+Math.random()*
+(window.innerWidth-150);
+
+let y=
+Math.random()*
+(window.innerHeight-100);
+
+noBtn.style.position="fixed";
+noBtn.style.left=x+"px";
+noBtn.style.top=y+"px";
+
+const messages=[
+"Nice Try 😂",
+"Nope 😏",
+"Think Again 💖",
+"Wrong Choice 🤣"
+];
+
+noBtn.innerHTML=
+messages[
+Math.floor(
+Math.random()*messages.length
+)
+];
+
+});
+
+}
+
+}
+
+function checkAnswer(answer){
+
+document.getElementById("feedback")
+.innerHTML=
+"✅ Correct!";
+
+currentQuestion++;
+
+setTimeout(()=>{
+
+if(currentQuestion
+< questions.length){
+
+loadQuestion();
+
+}else{
+
+document.getElementById("quizPage")
+.classList.add("hidden");
+
+document.getElementById("timePage")
+.classList.remove("hidden");
+
+}
+
+},800);
+
+}
+
+function showAwards(){
+
+document.getElementById("timePage")
+.classList.add("hidden");
+
+document.getElementById("awardsPage")
+.classList.remove("hidden");
+
+}
+
+function showStats(){
+
+document.getElementById("awardsPage")
+.classList.add("hidden");
+
+document.getElementById("statsPage")
+.classList.remove("hidden");
+
+}
+
+function showLetter(){
+
+document.getElementById("statsPage")
+.classList.add("hidden");
+
+document.getElementById("letterPage")
+.classList.remove("hidden");
+
+}
+
+function celebrate(){
+
+document.getElementById("letterPage")
+.classList.add("hidden");
+
+document.getElementById("finalPage")
+.classList.remove("hidden");
+
+for(let i=0;i<250;i++){
+
+let confetti=
+document.createElement("div");
+
+confetti.className="confetti";
+
+confetti.innerHTML=
+["🎉","🎊","💖","✨"]
+[Math.floor(Math.random()*4)];
+
+confetti.style.left=
+Math.random()*100+"vw";
+
+confetti.style.animationDuration=
+(2+Math.random()*4)+"s";
+
+document.body.appendChild(confetti);
+
+}
+
+for(let i=0;i<100;i++){
+
+let heart=
+document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="💖";
+
+heart.style.left=
+Math.random()*100+"vw";
+
+heart.style.animationDuration=
+(4+Math.random()*6)+"s";
+
+document.body.appendChild(heart);
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
